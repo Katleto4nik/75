@@ -1,5 +1,4 @@
-{
-  "name": "build",
+"name": "build",
   "on": ["push", "workflow_dispatch"],
   "jobs": {
     "build": {
@@ -10,7 +9,3 @@
         {"uses": "gradle/actions/setup-gradle@v4", "with": {"gradle-version": "9.2.1"}},
         {"run": "gradle build --no-daemon"},
         {"uses": "actions/upload-artifact@v4", "with": {"name": "MekaOptimization", "path": "build/libs/*.jar"}}
-      ]
-    }
-  }
-}
