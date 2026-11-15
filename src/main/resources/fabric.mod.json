@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "mekaoptimization",
+  "version": "${version}",
+  "name": "MekaOptimization",
+  "description": "optimize second futures with Minecraft",
+  "authors": [
+    "MekaOptimization"
+  ],
+  "license": "MIT",
+  "icon": "assets/mekaoptimization/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.mekaoptimization.MekaOptimizationClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
